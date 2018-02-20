@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="cat1">
+        <EditTextPreference
+            android:title="username"
+            android:defaultValue=""
+            android:summary="Enter name"
+            android:key="usernamePreference"/>
+
+        <EditTextPreference
+            android:title="phone"
+            android:defaultValue=""
+            android:summary="Enter ph number"
+            android:key="numberPreference"/>
+
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

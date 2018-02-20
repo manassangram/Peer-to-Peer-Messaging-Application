@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#e1e1e1"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/fom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:background="#1540ec"
+        android:orientation="horizontal"
+        android:paddingBottom="2dp" >
+
+        <ImageButton
+            android:id="@+id/senMessageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/ic_back"
+            android:text="d"
+            android:onClick="onClickBack"/>
+
+        <TextView
+            android:id="@+id/messageditText"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@+id/sendMessageButton"
+            android:layout_weight="0.72"
+            android:ems="10"
+            android:textColor="#fffefe"
+            android:textIsSelectable="false"
+            android:textSize="25dp"
+            android:gravity="center_horizontal" />
+
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/msgListView"
+        android:foregroundGravity="right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/form"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:paddingBottom="10dp"
+        android:layout_below="@+id/fom"
+
+        android:text="@string/hello_world" />
+
+    <LinearLayout
+        android:id="@+id/form"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="#91f1f1f1"
+        android:orientation="horizontal"
+        android:paddingBottom="2dp" >
+
+        <ImageButton
+            android:id="@+id/selectimageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/imageselection"
+            android:text="d"
+            android:onClick="onSelectClick"/>
+
+
+        <EditText
+            android:id="@+id/messageEditText"
+            android:layout_width="252dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignTop="@+id/button1"
+            android:layout_toLeftOf="@+id/sendMessageButton"
+            android:layout_weight="0.72"
+            android:ems="10"
+            android:maxHeight="80dp" />
+
+        <ImageButton
+            android:id="@+id/sendMessageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/send_button"
+            android:text="d"
+            android:onClick="onSendClick" />
+    </LinearLayout>
+
+
+</RelativeLayout>
